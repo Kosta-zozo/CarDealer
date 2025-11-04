@@ -6,5 +6,5 @@ public class FuelType
 {
     public int Id { get; set; }
     [Required]
-    public string Name { get; set; }
+    public required string Name { get; set; }
 }

@@ -16,9 +16,11 @@ public enum Color
 public class Car
 {
     public int Id { get; set; }
-    [Required] public int BrandId { get; set; }
+    [Required]
+    public int BrandId { get; set; }
     public Brand? Brand { get; set; }
-    [Required] public int FuelTypeId { get; set; }
+    [Required]
+    public int FuelTypeId { get; set; }
     public FuelType? FuelType { get; set; }
     [Required]
     public string Model { get; set; } = string.Empty;
@@ -28,7 +30,8 @@ public class Car
     public int Mileage { get; set; }
     [DataType(DataType.Date)]
     public DateTime ManufacturingDate { get; set; }
+    [Required]
     [Precision(18, 2)]
     [DataType(DataType.Currency)]
-    public decimal? Price { get; set; }
+    public decimal Price { get; set; }
 }

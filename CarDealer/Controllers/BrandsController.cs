@@ -22,10 +22,10 @@ namespace CarDealer.Controllers
         // GET: Brands
         public async Task<IActionResult> Index()
         {
-            var BrandData = _context.Brand
+            var brandData = _context.Brand
                             .Select(b => new BrandsWithCount { BrandId = b.Id, BrandName = b.Name, CarCount = b.Cars.Where(r => r.FuelType!.Name == "Electric").Count() });
 
-            return View(await BrandData.ToListAsync());
+            return View(await brandData.ToListAsync());
         }
 
         // GET: Brands/Details/5

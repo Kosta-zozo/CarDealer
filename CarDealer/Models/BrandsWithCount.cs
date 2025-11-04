@@ -6,8 +6,6 @@ namespace CarDealer.Models;
 public class BrandsWithCount
 {
     public int BrandId { get; set; }
-    [Required]
-    public string BrandName { get; set; }
-    [Required]
+    public required string BrandName { get; set; }
     public int CarCount { get; set; }
 }
