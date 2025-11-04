@@ -14,31 +14,31 @@
         <div class="col mb-4">
             <div class="card">
                 <div class="card-body car-card">
-                    <p>
+                    <p class="card-text">
                         <b>@Html.DisplayNameFor(model => model.Brand)</b>:
                         @Html.DisplayFor(modelItem => item.Brand!.Name)
                     </p>
-                    <p>
+                    <p class="card-text">
                         <b>@Html.DisplayNameFor(model => model.Model)</b>:
                         @Html.DisplayFor(modelItem => item.Model)
                     </p>
-                    <p>
+                    <p class="card-text">
                         <b>@Html.DisplayNameFor(model => model.FuelType)</b>:
                         <span @{Write(item.FuelType!.Name == "Electric" ? "class=col-dodgerblue" : "");}>@Html.DisplayFor(modelItem => item.FuelType.Name)</span>
                     </p>
-                    <p>
+                    <p class="card-text">
                         <b>@Html.DisplayNameFor(model => model.Color)</b>:
                         @Html.DisplayFor(modelItem => item.Color)
                     </p>
-                    <p>
+                    <p class="card-text">
                         <b>@Html.DisplayNameFor(model => model.Mileage)</b>:
                         @Html.DisplayFor(modelItem => item.Mileage)
                     </p>
-                    <p>
+                    <p class="card-text">
                         <b>@Html.DisplayNameFor(model => model.ManufacturingDate)</b>:
                         @Html.DisplayFor(modelItem => item.ManufacturingDate)
                     </p>
-                    <p>
+                    <p class="card-text">
                         <b>@Html.DisplayNameFor(model => model.Price)</b>:
                         @Html.DisplayFor(modelItem => item.Price)
                     </p>
