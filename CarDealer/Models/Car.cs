@@ -23,7 +23,7 @@ public class Car
     public int FuelTypeId { get; set; }
     public FuelType? FuelType { get; set; }
     [Required]
-    public string Model { get; set; } = string.Empty;
+    public required string Model { get; set; }
     [Required]
     public Color Color { get; set; }
     [Range(0,int.MaxValue)]

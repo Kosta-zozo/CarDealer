@@ -37,3 +37,7 @@ body {
 .car-card p {
     margin-bottom: 3px;
 }
+
+.col-red {
+    color: red;
+}
