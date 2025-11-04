@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|c:\\users\\user\\documents\\github\\cardealer\\cardealer\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|solutionrelative:cardealer\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|c:\\users\\user\\documents\\github\\cardealer\\cardealer\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|solutionrelative:cardealer\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|c:\\users\\user\\documents\\github\\cardealer\\cardealer\\controllers\\fueltypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|solutionrelative:cardealer\\controllers\\fueltypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|c:\\users\\user\\documents\\github\\cardealer\\cardealer\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|solutionrelative:cardealer\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|c:\\users\\user\\documents\\github\\cardealer\\cardealer\\controllers\\brandscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12ADD35-F63C-451C-BED3-29D53AA684ED}|CarDealer\\CarDealer.csproj|solutionrelative:cardealer\\controllers\\brandscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CarDealer\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CarDealer\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-04T08:44:40.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\Views\\Cars\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarDealer\\Views\\Cars\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\Views\\Cars\\Index.cshtml",
+              "RelativeToolTip": "CarDealer\\Views\\Cars\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-04T08:33:55.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuelTypesController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\Controllers\\FuelTypesController.cs",
+              "RelativeDocumentMoniker": "CarDealer\\Controllers\\FuelTypesController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\Controllers\\FuelTypesController.cs",
+              "RelativeToolTip": "CarDealer\\Controllers\\FuelTypesController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwDsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:27:54.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "CarDealer\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "CarDealer\\Controllers\\CarsController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:27:38.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BrandsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\Controllers\\BrandsController.cs",
+              "RelativeDocumentMoniker": "CarDealer\\Controllers\\BrandsController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\CarDealer\\CarDealer\\Controllers\\BrandsController.cs",
+              "RelativeToolTip": "CarDealer\\Controllers\\BrandsController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAA4wFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:26:45.74Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

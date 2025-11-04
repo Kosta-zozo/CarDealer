@@ -8,88 +8,40 @@
 
 <p>
     <a asp-action="Create" class="btn btn-primary">Create New</a>
-@* </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FuelType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Model)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Mileage)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ManufacturingDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FuelType.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Model)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mileage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ManufacturingDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table> *@
 <div class="row row-cols-1 row-cols-md-3">
     @foreach (var item in Model)
     {
         <div class="col mb-4">
             <div class="card">
-                <div class="card-body">
-                    <b>@Html.DisplayNameFor(model => model.Brand)</b>:
-                    @Html.DisplayFor(modelItem => item.Brand.Name)
-                    <br>
-                    <b>@Html.DisplayNameFor(model => model.Model)</b>:
-                    @Html.DisplayFor(modelItem => item.Model)
-                    <br>
-                    <b>@Html.DisplayNameFor(model => model.FuelType)</b>:
-                    <span style="color:@{Write(item.FuelType.Name == "Electric" ? "dodgerblue" : "black");};">@Html.DisplayFor(modelItem => item.FuelType.Name)</span>
-                    <br>
-                    <b>@Html.DisplayNameFor(model => model.Color)</b>:
-                    @Html.DisplayFor(modelItem => item.Color)
-                    <br>
-                    <b>@Html.DisplayNameFor(model => model.Mileage)</b>:
-                    @Html.DisplayFor(modelItem => item.Mileage)
-                    <br>
-                    <b>@Html.DisplayNameFor(model => model.ManufacturingDate)</b>:
-                    @Html.DisplayFor(modelItem => item.ManufacturingDate)
-                    <br>
-                    <b>@Html.DisplayNameFor(model => model.Price)</b>:
-                    @Html.DisplayFor(modelItem => item.Price)
-                    <br>
+                <div class="card-body margin-bottom-3-to-child-p">
+                    <p>
+                        <b>@Html.DisplayNameFor(model => model.Brand)</b>:
+                        @Html.DisplayFor(modelItem => item.Brand!.Name)
+                    </p>
+                    <p>
+                        <b>@Html.DisplayNameFor(model => model.Model)</b>:
+                        @Html.DisplayFor(modelItem => item.Model)
+                    </p>
+                    <p>
+                        <b>@Html.DisplayNameFor(model => model.FuelType)</b>:
+                        <span @{Write(item.FuelType!.Name == "Electric" ? "class=col-dodgerblue" : "");}>@Html.DisplayFor(modelItem => item.FuelType.Name)</span>
+                    </p>
+                    <p>
+                        <b>@Html.DisplayNameFor(model => model.Color)</b>:
+                        @Html.DisplayFor(modelItem => item.Color)
+                    </p>
+                    <p>
+                        <b>@Html.DisplayNameFor(model => model.Mileage)</b>:
+                        @Html.DisplayFor(modelItem => item.Mileage)
+                    </p>
+                    <p>
+                        <b>@Html.DisplayNameFor(model => model.ManufacturingDate)</b>:
+                        @Html.DisplayFor(modelItem => item.ManufacturingDate)
+                    </p>
+                    <p>
+                        <b>@Html.DisplayNameFor(model => model.Price)</b>:
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </p>
                     <a asp-action="Edit" asp-route-id="@item.Id"class="btn btn-primary">Edit</a> |
                     <a asp-action="Delete" asp-route-id="@item.Id"class="btn btn-danger">Delete</a>
                 </div>

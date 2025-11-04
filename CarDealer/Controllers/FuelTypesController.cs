@@ -26,13 +26,8 @@ namespace CarDealer.Controllers
         }
 
         // GET: FuelTypes/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var fuelType = await _context.FuelType
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (fuelType == null)
@@ -66,13 +61,8 @@ namespace CarDealer.Controllers
         }
 
         // GET: FuelTypes/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var fuelType = await _context.FuelType.FindAsync(id);
             if (fuelType == null)
             {
@@ -88,11 +78,6 @@ namespace CarDealer.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] FuelType fuelType)
         {
-            if (id != fuelType.Id)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
                 try
@@ -117,13 +102,8 @@ namespace CarDealer.Controllers
         }
 
         // GET: FuelTypes/Delete/5
-        public async Task<IActionResult> Delete(int? id, bool? saveChangesError = false)
+        public async Task<IActionResult> Delete(int id, bool? saveChangesError = false)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var fuelType = await _context.FuelType
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (fuelType == null)

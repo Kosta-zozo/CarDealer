@@ -27,13 +27,8 @@ namespace CarDealer.Controllers
         }
 
         // GET: Cars/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var car = await _context.Car
                 .Include(c => c.Brand)
                 .Include(c => c.FuelType)
@@ -73,13 +68,8 @@ namespace CarDealer.Controllers
         }
 
         // GET: Cars/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var car = await _context.Car.FindAsync(id);
             if (car == null)
             {
@@ -97,11 +87,6 @@ namespace CarDealer.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,BrandId,FuelTypeId,Model,Color,Mileage,ManufacturingDate,Price")] Car car)
         {
-            if (id != car.Id)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
                 try
@@ -128,13 +113,8 @@ namespace CarDealer.Controllers
         }
 
         // GET: Cars/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var car = await _context.Car
                 .Include(c => c.Brand)
                 .Include(c => c.FuelType)

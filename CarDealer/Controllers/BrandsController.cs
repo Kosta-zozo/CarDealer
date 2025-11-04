@@ -22,25 +22,15 @@ namespace CarDealer.Controllers
         // GET: Brands
         public async Task<IActionResult> Index()
         {
-            var test = from b in _context.Brand
-                       join p in _context.Car on b.Id equals p.BrandId into bp
-                       from p in bp.DefaultIfEmpty()
-                       //where p.FuelType.Name == "Electric"
-                       group b by b.Name into GroupedTable
-                       select new BrandElectricCarCount { BrandId = GroupedTable.First().Id, BrandName = GroupedTable.Key, CarCount = GroupedTable.First().Cars.Where(r => r.FuelType.Name == "Electric").Count() };
-            
+            var BrandData = _context.Brand
+                            .Select(b => new BrandsWithCount { BrandId = b.Id, BrandName = b.Name, CarCount = b.Cars.Where(r => r.FuelType!.Name == "Electric").Count() });
 
-            return View(await test.ToListAsync());
+            return View(await BrandData.ToListAsync());
         }
 
         // GET: Brands/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var brand = await _context.Brand
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (brand == null)
@@ -74,13 +64,8 @@ namespace CarDealer.Controllers
         }
 
         // GET: Brands/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var brand = await _context.Brand.FindAsync(id);
             if (brand == null)
             {
@@ -96,11 +81,6 @@ namespace CarDealer.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Brand brand)
         {
-            if (id != brand.Id)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
                 try
@@ -125,13 +105,8 @@ namespace CarDealer.Controllers
         }
 
         // GET: Brands/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var brand = await _context.Brand
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (brand == null)
